@@ -33,3 +33,11 @@ let gente = [{
         edad: 10
     },
 ]
+empiezaJ=new Array();
+for (const iterator of gente) {
+    if(iterator.nombre.startsWith('J')){
+        empiezaJ.push(iterator.nombre);
+    }
+    
+}
+console.log(empiezaJ);

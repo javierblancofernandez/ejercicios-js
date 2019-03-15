@@ -9,8 +9,12 @@ let frase = Math.random() > 0.5 ? ['unite', 'states', 'america'] : ['aeropuertos
 
 console.log('El array frase es: ', frase);
 // Aquí tu código
-
-
+var acronimo="";
+for (var iterator of frase) {
+    acronimo+=iterator.charAt(0); 
+    
+}
+acronimo=acronimo.toUpperCase();
 
 // Hasta aquí
 console.log('El string acronimo es: ', acronimo);
