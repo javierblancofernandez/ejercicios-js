@@ -32,4 +32,12 @@ let gente = [{
         edad: 10
     },
 ]
-
+personas4letras=new Array();
+for (const iterator of gente) {
+    
+    personas4letras.push(iterator.nombre);
+    }
+personas4l=personas4letras.filter(function(nombre){
+    return nombre.length ==4;
+});
+console.log(personas4l);
