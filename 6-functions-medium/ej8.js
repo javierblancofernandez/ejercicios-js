@@ -12,6 +12,19 @@
 let sumaDesdeHasta = (desde, hasta) => {
     let sumatorio = 0;
     // Aquí tu código.  Desde aquí:
+    if (typeof desde == 'number' && typeof hasta == 'number') {
+        if (desde < hasta) {
+            for (let i = desde; i <= hasta; i++) {
+                sumatorio += i;
+            }
+        } else {
+            for (let i = hasta; i <= desde; i++) {
+                sumatorio += i;
+            }
+        }
+    } else {
+        return "Debo recibir números";
+    }
 
     // Hasta aquí.
     return sumatorio;
