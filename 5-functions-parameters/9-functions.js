@@ -9,7 +9,12 @@
 //  throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+var muestraPorConsolaEurosEnPesetas = function (n) {
+    if (typeof n == 'number') {
+        return undefined;
+    } else { }
+    throw new Error('convierteEurosEnPesetas debe recibir un number')
+}
 
 // Hasta aquí
 
